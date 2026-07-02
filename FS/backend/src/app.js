@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
+const authRoutes = require("./routes/authRoutes");
 const healthRoutes = require("./routes/healthRoutes");
 const testRoutes = require("./routes/testRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
@@ -17,6 +18,7 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use("/api/auth", authRoutes);
 app.use("/api/health", healthRoutes);
 app.use("/api/test", testRoutes);
 

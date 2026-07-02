@@ -6,35 +6,24 @@
 # Dependencies
 node_modules/
 
+# Build output
+dist/
+build/
 
 # Logs
-logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Build output
-dist/
-build/
-.next/
-out/
-
-# Test coverage
+# Runtime and cache files
+.vite/
+.cache/
 coverage/
 
-# Runtime and cache files
-.cache/
-.parcel-cache/
-.vite/
-tmp/
-temp/
-
-# OS files
+# OS and editor files
 .DS_Store
 Thumbs.db
-
-# Editor files
 .vscode/
 .idea/
