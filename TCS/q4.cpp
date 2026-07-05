@@ -19,7 +19,7 @@ int main(){
         cout<<0;
     }
     else{
-        int ans=1+(n-daystosun)/7;
+        int ans=1+(n-daystosun-1)/7;
         cout<<ans;
     }
     return 0;
