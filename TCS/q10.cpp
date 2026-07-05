@@ -16,6 +16,14 @@ int main(){
     cin>>r;
     int s=sumofdig(n);
     s*=r;
-    s=sumofdig(s);
+    while(s>9){
+        int result=0;
+        while(s>0){
+            int d=s%10;
+            result+=d;
+            s/=10;
+        }
+        s=result;
+    }
     cout<<s<<endl;
 }
