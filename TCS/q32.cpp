@@ -3,7 +3,7 @@ using namespace std;
 int main(){
     int n;
     cin>>n;
-    char ans;
+    char ans='\0';
     vector<char> a(n);
     for(int i=0;i<n;i++){
         cin>>a[i];
@@ -18,6 +18,12 @@ int main(){
             break;
         }
     }
-    cout<<ans<<endl;
+    if(ans=='\0'){
+        cout<<"All are even";
+    }
+    else{
+        cout<<ans<<endl;
+    }
+    
     return 0;
 }
